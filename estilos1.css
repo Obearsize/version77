@@ -1,0 +1,625 @@
+body{
+	font-family: times;
+	color: white;
+	font-size: 1.2rem;
+	line-height: 1.6em;
+	margin: 0;
+}
+h2{
+	margin: 0;
+}
+h1{
+	margin: 0;
+}
+
+.container{
+	width: 100%;
+	max-width: 850px;
+	margin: 0 auto;
+}
+.Polar{
+	width: 60px;
+	height: 60px;
+	margin-left: 1rem;
+}
+.header{
+	background: #704727; 
+	color: white;
+	padding: o.8rem 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+.header a{
+	color: white;
+	text-decoration: none;
+}
+.logo-nav-container{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-top: 1.5rem;
+
+}
+.LOGO {
+	letter-spacing: 10px;
+	font-size: 1.3em;
+}
+.menu-icon{
+	display: none;
+	width: 13%;
+	flex-direction: center;
+	background-color: #704727;
+	color: white;
+	border: none;
+	margin-bottom: 25px;
+	cursor: pointer;
+}
+.navigation ul{
+	padding: 0;
+	margin: 0 ;
+	list-style: none;
+}
+.navigation ul li{
+display: inline-block;
+position: relative;
+}
+.navigation ul li a{
+	display: block;
+	padding: 0.2rem 1rem;
+	transition: all o.4s linear;
+	border-radius: 5px;
+}
+.navigation ul li a:hover{
+	background-color: #fff;
+	color: #333;
+}
+.header .navigation ul li:hover .children{
+	display: block;
+}
+.header .navigation ul li .children{
+	display: none;
+	background:  #704727;
+	position: absolute;
+	width: 200%;
+	z-index: 1000;
+}
+.header .navigation ul li .children li{
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(255,255,255,.5)
+}
+.header .navigation ul li .children li a{
+	display: block;
+}
+.main{
+	padding: 12rem;
+	max-width: 85%;
+	background: gray;
+	background-size: cover;
+	background-position: center;
+	transition: all .1s ease-in-out;
+	background-image: url(imagenes/banner1.jpg);
+	animation: banner 18s infinite linear;
+}
+.main-content{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.main-content h1{
+margin: 0;
+padding: 0;
+padding-bottom: 35px;
+font-size: 50px;
+text-align: center;
+letter-spacing: 2px;
+line-height: 3rem;
+color: #704727;
+}
+.main-content a{
+	text-decoration: none;
+	color: white;
+	padding: 9px 10px;
+	border: 5px solid white;
+	font-size: 23px; 
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	justify-content: center;
+	transition: all .3s ease-in-out;
+	margin-top: 50px;
+	flex-direction: row;
+}
+.main-content a:hover{
+	background-color: #fff;
+	color: #333;
+}
+.cuerpo{
+	width: 100%;
+}
+.cuerpo1{
+	width: 100%;
+	background-color: #704727;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.cuerpo1 img{
+	margin-top: 15px;
+	padding: 0;
+}
+.cuerpo1 article{
+letter-spacing: 8px;
+margin-top: 18px;
+font-size: 20px;
+color: #fff;
+}
+.portafolio{
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+}
+.uno{
+	width: 25%;
+	background-image: url(imagenes/banner1.jpg);
+	background-size: cover; 
+}
+.uno1{
+	width: 25%;
+	justify-content: center;
+	flex-direction: center;
+	align-items: center;
+	text-align: center;
+}
+.uno1 h2{
+color: #704727;
+}
+.uno1 p{
+	color: gray;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.btn{
+	padding: 10px 19px;
+	margin: 3px 0;
+	background: #704727;
+	text-decoration: none;
+	color: #fff;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #333;
+}
+.uno2{
+	width: 50%;
+	background-image: url(imagenes/banner3.jpg);
+	background-size: cover;
+}
+.portafolio2{
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+}
+.dos{
+	width: 25%;
+	background-image: url(imagenes/banner1.jpg);
+	background-size: cover; 
+}
+.dos1{
+	width: 25%;
+	justify-content: center;
+	flex-direction: center;
+	align-items: center;
+	text-align: center;
+}
+.dos1 h2{
+color: #704727;
+}
+.dos1 p{
+	color: gray;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.btn{
+	padding: 10px 19px;
+	margin: 3px 0;
+	background: #704727;
+	text-decoration: none;
+	color: #fff;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #333;
+}
+.dos2{
+	width: 50%;
+	background-image: url(imagenes/banner2.jpg);
+	background-size: cover;
+}
+.portafolio3{
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 35px;
+}
+.tres{
+	width: 25%;
+	background-image: url(imagenes/banner1.jpg);
+	background-size: cover; 
+}
+.tres1{
+	width: 25%;
+	justify-content: center;
+	flex-direction: center;
+	align-items: center;
+	text-align: center;
+}
+.tres1 h2{
+color: #704727;
+}
+.tres1 p{
+	color: gray;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.btn{
+	padding: 10px 19px;
+	margin: 3px 0;
+	background: #704727;
+	text-decoration: none;
+	color: #fff;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #333;
+}
+.tres2{
+	width: 50%;
+	background-image: url(imagenes/banner2.jpg);
+	background-size: cover;
+}
+.portafolio4{
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 35px;
+}
+.cuatro{
+	width: 25%;
+	background-image: url(imagenes/banner1.jpg);
+	background-size: cover; 
+}
+.cuatro1{
+	width: 25%;
+	justify-content: center;
+	flex-direction: center;
+	align-items: center;
+	text-align: center;
+}
+.cuatro1 h2{
+color: #704727;
+}
+.cuatro1 p{
+	color: gray;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.btn{
+	padding: 10px 19px;
+	margin: 3px 0;
+	background: #704727;
+	text-decoration: none;
+	color: #fff;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #333;
+}
+.cuatro2{
+	width: 50%;
+	background-image: url(imagenes/banner2.jpg);
+	background-size: cover;
+}
+@keyframes banner{
+	0%{background-image: url(imagenes/banner1.jpg);}
+	33.3%{background-image: url(imagenes/banner1.jpg);}
+	33.4%{background-image: url(imagenes/banner2.jpg);}
+	66.7%{background-image: url(imagenes/banner2.jpg);}
+	66.8%{background-image: url(imagenes/banner3.jpg);}
+	100%{background-image: url(imagenes/banner3.jpg);}
+}
+.footer{
+	background: #704727;
+	width: 100%;
+}
+
+.iconos{
+width: 100%;
+display: flex;
+text-align: center;
+justify-content: center;
+flex-direction: center;
+}
+.icon1{
+width: 33.3%;
+}
+.icon1 a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin-top: 10px; 
+}
+.icon2{
+	width: 33.3%;
+}
+.icon2 a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin-top: 10px;
+}
+.icon3{
+	width: 33.3%; 		
+}
+.icon3 a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin-top: 10px;
+}
+
+.imagen {
+justify-content: center;
+text-align: center;
+display: flex;
+}
+.imagen p{
+color: white;
+margin-top: 20px;
+letter-spacing: 5px;
+padding: 0px;
+}
+.imagen img{
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+@media only screen and (max-width: 780px){
+.menu-icon{
+	display: block;
+	cursor: pointer;
+	background-color: #704727;
+}
+.navigation {
+	width: 100%;
+}
+.navigation ul{
+	display: block;
+}
+.navigation ul li{
+display: block;
+margin-top: 1rem;
+}
+.navigation ul li a{
+	display: block;
+	padding: 0.5rem 0;
+	transition: all o.4s linear;
+	border-radius: 5px;
+}
+.navigation ul li a:hover{
+	background: #fff;
+}
+.header .navigation ul li .children{
+	display: block;
+}
+.header .navigation ul li{
+	margin-left: 15px;
+}
+.header .navigation ul li .children{
+width: 100%;
+position: relative;
+margin-left: 35px;
+}
+.maincontent a{
+	flex-direction: row;
+}
+.cuerpo{
+	 width:100%;
+}
+.cuerpo1{
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+}
+.cuerpo1 img{
+	margin-left: 18px;
+}
+.portafolio{
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+}
+.uno{
+	width: 60%;
+	background-image: url(imagenes/banner1.jpg);
+	background-size: 100% 100%; 
+}
+.uno1{
+	width: 40%;
+	justify-content: center;
+	flex-direction: center;
+	align-items: center;
+	text-align: center;
+	font-size: 15px;
+}
+.uno1 h2{
+color:  #704727;
+}
+.uno1 p{
+	color: gray;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.btn{
+	padding: 10px 19px;
+	margin: 3px 0;
+	background: #704727;
+	text-decoration: none;
+	color: #fff;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #333;
+}
+.uno2{
+	width: 50%;
+	background-image: url(imagenes/banner3.jpg);
+	background-size: cover;
+	display: none;
+}
+.portafolio2{
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+}
+.dos{
+	width: 60%;
+	background-image: url(imagenes/banner2.jpg);
+	background-size: 100% 100%; 
+}
+.dos1{
+	width: 40%;
+	justify-content: center;
+	flex-direction: center;
+	align-items: center;
+	text-align: center;
+	font-size: 15px;
+}
+.dos1 h2{
+color: #704727;
+}
+.dos1 p{
+	color: gray;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.btn{
+	padding: 10px 19px;
+	margin: 3px 0;
+	background: #704727;
+	text-decoration: none;
+	color: #fff;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #333;
+}
+.dos2{
+	width: 50%;
+	background-image: url(imagenes/banner2.jpg);
+	background-size: cover;
+	display: none;
+}
+.portafolio3{
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 35px;
+}
+.tres{
+	width: 60%;
+	background-image: url(imagenes/banner3.jpg);
+	background-size: 100% 100%; 
+}
+.tres1{
+	width: 40%;
+	justify-content: center;
+	flex-direction: center;
+	align-items: center;
+	text-align: center;
+	font-size: 15px;
+}
+.tres1 h2{
+color: #704727;
+}
+.tres1 p{
+	color: gray;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.btn{
+	padding: 10px 19px;
+	margin: 3px 0;
+	background: #704727;
+	text-decoration: none;
+	color: #fff;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #333;
+}
+.tres2{
+	width: 50%;
+	background-image: url(imagenes/banner2.jpg);
+	background-size: cover;
+	display: none;
+}
+.portafolio4{
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 35px;
+}
+.cuatro{
+	width: 60%;
+	background-image: url(imagenes/banner3.jpg);
+	background-size: 100% 100%; 
+}
+.cuatro1{
+	width: 40%;
+	justify-content: center;
+	flex-direction: center;
+	align-items: center;
+	text-align: center;
+	font-size: 15px;
+}
+.cuatro1 h2{
+color:  #704727;
+}
+.cuatro1 p{
+	color: gray;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.btn{
+	padding: 10px 19px;
+	margin: 3px 0;
+	background: #704727;
+	text-decoration: none;
+	color: #fff;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #333;
+}
+.cuatro2{
+	width: 50%;
+	background-image: url(imagenes/banner2.jpg);
+	background-size: cover;
+	display: none;
+}
+}
+@media only screen and (max-width: 402px){
+.LOGO {
+	letter-spacing: 10px;
+	font-size: 0.9em;
+}
+.Polar{
+	width: 40px;
+	height: 40px;
+	margin-left: 1rem;
+}
+.cuerpo1 article{
+letter-spacing: 8px;
+margin-top: 12px;
+font-size: 15px;
+color: #fff;
+}
+}
